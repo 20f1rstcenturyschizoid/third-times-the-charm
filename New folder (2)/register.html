@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(63, 113, 151);
+            font-family: Arial;
+        }
+        .box {
+            width: 350px;
+            background-color: rgb(129, 192, 239);
+            border: 3px solid black;
+            text-align: center;
+            margin: 80px auto;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px;
+        }
+                
+        #BTHTA_logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 150px; 
+            height: 125px;
+            opacity: 0.85; 
+        }
+    </style>
+</head>
+<body>
+
+<div style="background-color:rgb(34, 87, 128); padding: 15px; border-radius: 10px; margin: 20px auto; width: fit-content;">
+    <center>
+        <b>
+        <a style="color: white; text-decoration: none; margin: 0 10px;" href="login.html">Log in</a> |
+        <a style="color: white; text-decoration: none; margin: 0 10px;" href="index.html">Homepage</a> |
+        <a style="color: white; text-decoration: none; margin: 0 10px;" href="contact_us.html">Contact Us</a>
+        </b>
+    </center>
+    <img src="BTHTA_logo.png" 
+    alt="Batumi Transport & Trade Authority Logo" id="BTHTA_logo">
+</div>
+
+<br><br>
+
+<div class="box">
+    <h2>We're excited to have you join our community.
+        <br>
+    Sign up here!
+    </h2>
+    <img src="https://cdn-icons-png.freepik.com/512/6210/6210134.png" width="100">
+    <br><br>
+
+    <form>
+        <label><b>Username:</b></label><br>
+        <input type="text" id="Username" required minlength="6" maxlength="18" placeholder="Click here to enter username"><br><br>
+
+        <label><b>Password:</b></label><br>
+        <input type="password" id="password" required minlength="8" placeholder="Put in atleast 8 characters"><br><br>
+
+        <label><b>Email</b></label><br>
+        <input type="email" id="Mail" required placeholder="Must be a valid email"><br><br>
+
+        <label><b>Country of Residence:</b></label><br>
+        <input type="text" id="Country" required placeholder="Must be a valid country"><br><br>
+
+        <label><b>City of Residence:</b></label><br>
+        <input type="text" id="City" required placeholder="Can't be out the country"><br><br>
+
+        <label><b>Address:</b></label><br>
+        <input type="text" id="address" required placeholder="Must be a valid address"><br><br>
+
+        <label><b>Age:</b></label><br>
+<input type="number" id="Age" min="16" max= "130" required placeholder="Min 16"><br><br>
+
+        <label><b>Gender:</b></label><br>
+        <input type="radio" id="male" name="gender" value="male" required> Male<br>
+        <input type="radio" id="female" name="gender" value="female"> Female<br>
+        <input type="radio" id="unknown" name="gender" value="none"> Prefer not to say<br><br>
+
+        <label><input type="checkbox" id="TOS" required> I have read and agree to the <a href="TERMS_AND_SERVICES.html">terms and conditions</a>.</label><br><br>
+        <label><input type="checkbox" id="privacy" required> I have read and agree to the <a href="privacy_policy.html">privacy policy</a>.</label><br><br>
+        <label><input type="checkbox" id="promotion"> I agree to receive special promotions or news from Batumi Transport & Trade Authority (optional)</label><br><br>
+
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Reset">
+
+    </form>
+</div>
+
+
+<div style="background-color:rgb(34, 87, 128); color:white; text-align:center; padding:10px;">
+    <p>If you're seeing this, that means you're not signed in yet.
+    Please <a href="login.html" style="color:white;">log in here</a>. <BR>Unless you're making the account right now.</p>
+</div>
+
+</body>
+</html>
